@@ -1,0 +1,67 @@
+.col-3{
+    width: 30%;
+}
+
+.card-productos{
+    width: 33%;
+    margin-bottom: 20px;
+}
+
+.col-7{
+    width: 70%;
+}
+
+.card-title-cat{
+    font-size: 16px;
+    font-weight: 620;
+    color: teal;
+}
+
+.bannerproductos{
+    margin-bottom: 20px;
+}
+
+.btn-outline-secondary{
+    border-color: transparent;
+}
+
+.btn-outline-secondary:hover{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.card-title-cat-productos{
+    color:teal;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 500px){
+    .col-3{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .col-7{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .card-productos{
+        width: 50%;
+    }
+  
+    .btn{
+        max-width: 100%;
+        font-size: 15px;
+    }
+    .list-group-item{
+        max-width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .card-title-cat-productos{
+        font-size: 14px;
+    }
+}
+

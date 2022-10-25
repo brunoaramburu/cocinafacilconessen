@@ -1,0 +1,63 @@
+
+
+.logowsp{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.btn-success{
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.productoimg{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.botonrecetas{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.titulo-producto{
+    font-size: 30px;
+    font-weight: 400;
+    color: teal;
+    margin-top: 15px;
+}
+
+a:hover{
+    color: black;
+}
+
+h4{
+    font-size: 23px;
+    font-weight: 400;
+    color: teal;
+}
+
+.titulorelacionados{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .titulo-producto{
+        text-align-last: center;
+    }
+    
+    .col-4{
+        width: 100%;
+    }
+    
+    .col-6{
+        width: 100%;
+    }
+}

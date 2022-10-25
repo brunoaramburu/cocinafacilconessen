@@ -1,0 +1,44 @@
+.video-contenedor iframe {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 5px;
+}
+
+.video-pc{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.video-cel{margin-bottom: 15px;}
+
+@media screen and (max-width:500px){
+    .video-cel{
+        width: 95%;
+        justify-content: center;
+    }
+    
+    .col-video-cel{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+
+    .video-contenedor iframe {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .video-cel{
+        display: none !important;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .video-pc{
+        display: none !important;
+    }
+}

@@ -1,0 +1,67 @@
+.containermapa{
+    display: flex;
+    justify-content: center;
+}
+
+.mapa{
+    box-shadow: 0 0 15px grey;
+    border-radius: 10px;
+}
+
+.divcarousel{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px grey;
+    border-radius: 10px;
+    background-color: darkslategray;
+    width: 100%;
+    height: 100%;
+}
+
+.textoopinion{
+    margin-inline: 20%;
+    color: whitesmoke;
+}
+
+.textoperfil{
+    color: whitesmoke;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.comillas{
+    margin-left: 70%;
+    margin-bottom: 5px;
+}
+
+.titulosobrenosotros{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenesopinion{
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.estrellas{
+    margin-inline: 20%;
+}
+
+.carouselsobre{
+    width: 1000px;
+    height: 400px;    
+}
+
+.itemsobre{
+    margin-block: 5%;
+}
+
+@media screen and (max-width: 1203px){
+    .carouselsobre{
+        width: 100%;
+        height: 100%;
+    }
+}
