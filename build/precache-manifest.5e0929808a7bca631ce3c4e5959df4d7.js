@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "7e5cc33238788a79c1da",
-    "url": "/static/css/main.3872c5db.chunk.css"
+    "revision": "2799038897c34506a031",
+    "url": "/static/css/main.28021ec5.chunk.css"
   },
   {
-    "revision": "7e5cc33238788a79c1da",
-    "url": "/static/js/main.7e5cc332.chunk.js"
+    "revision": "2799038897c34506a031",
+    "url": "/static/js/main.27990388.chunk.js"
   },
   {
     "revision": "aa1ecd07d8b85afa671e",
     "url": "/static/js/1.aa1ecd07.chunk.js"
   },
   {
-    "revision": "28f10cdaf5600cd199c0",
-    "url": "/static/css/2.f8e7ce1d.chunk.css"
+    "revision": "a10ce9593ed58ee584f6",
+    "url": "/static/css/2.44f776fe.chunk.css"
   },
   {
-    "revision": "28f10cdaf5600cd199c0",
-    "url": "/static/js/2.28f10cda.chunk.js"
+    "revision": "a10ce9593ed58ee584f6",
+    "url": "/static/js/2.a10ce959.chunk.js"
   },
   {
     "revision": "fceb6f06dfc7e888f477",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/Sumate.ccd93203.png"
   },
   {
-    "revision": "00a4d19f17f774074e2c99408adbe670",
+    "revision": "69df27aef8efab9b7d0b40a397bc5641",
     "url": "/index.html"
   }
 ];
