@@ -18,7 +18,7 @@ import { useState, useEffect } from 'react';
 import FormSub from './FormSub';
 
 function Inicio () {
-	const url = 'https://cocinafacilconessenbuild.herokuapp.com/api/recetas_recientes/'
+	const url = 'http://cocinafacilconessen.com.ar/api/recetas_recientes/'
 	const [receta, setReceta] = useState()
 	const fetchApi = async () => {
 		const response = await fetch(url)

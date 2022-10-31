@@ -6,7 +6,7 @@ import FotoBusqueda from '../img/busqueda.png';
 import BannerProductos from '../img/ProductosB.png';
 
 function Combos() {
-	const url = 'https://cocinafacilconessenbuild.herokuapp.com/api/combos/'
+	const url = 'http://cocinafacilconessen.com.ar/api/combos/'
 	const [producto, setProducto] = useState()
     const [columnaproductos, setColumnaProducto] = useState()
     const [busqueda, setBusqueda] = useState("")

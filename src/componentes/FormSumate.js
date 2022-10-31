@@ -100,7 +100,7 @@ handleSubmit(event) {
         })
     }
     else{  
-    fetch('https://cocinafacilconessenbuild.herokuapp.com/api/sumate/', {
+    fetch('http://cocinafacilconessen.com.ar/api/sumate/', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

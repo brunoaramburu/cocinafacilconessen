@@ -8,7 +8,7 @@ import BannerRecetas from '../img/Recetas.png';
 import FotoBusqueda from '../img/busqueda.png';
 
 function Recetas() {
-	const urlreceta = 'https://cocinafacilconessenbuild.herokuapp.com/api/receta/'
+	const urlreceta = 'http://cocinafacilconessen.com.ar/api/receta/'
 	const [receta, setReceta] = useState()
     const [columnarecetas, setColumnaRecetas] = useState()
     const [busqueda, setBusqueda] = useState("")
@@ -38,7 +38,7 @@ function Recetas() {
 		fetchRecetas()
 	}, [])
 
-    const urlproductos = 'https://cocinafacilconessenbuild.herokuapp.com/api/productospararecetas/'
+    const urlproductos = 'http://cocinafacilconessen.com.ar/api/productospararecetas/'
     const [producto, setProducto] = useState()
     
 	const fetchProductos = async () => {

@@ -54,7 +54,7 @@ handleSubmit(event) {
         })
     }
     else{  
-    fetch('https://cocinafacilconessenbuild.herokuapp.com/api/suscripciones/', {
+    fetch('http://cocinafacilconessen.com.ar/api/suscripciones/', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

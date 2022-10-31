@@ -6,7 +6,7 @@ import FotoBusqueda from '../img/busqueda.png';
 import BannerProductos from '../img/ProductosB.png';
 
 function ProductosCat() {
-	const url = 'https://cocinafacilconessenbuild.herokuapp.com/api/productos/'
+	const url = 'http://cocinafacilconessen.com.ar/api/productos/'
 	const [producto, setProducto] = useState()
     const [columnaproductos, setColumnaProducto] = useState()
     const [busqueda, setBusqueda] = useState("")

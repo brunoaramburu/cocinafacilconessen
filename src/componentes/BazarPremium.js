@@ -6,7 +6,7 @@ import FotoBusqueda from '../img/busqueda.png';
 import BannerProductos from '../img/ProductosB.png';
 
 function BazarPremium() {
-	const url = 'https://cocinafacilconessenbuild.herokuapp.com/api/bazarpremium/'
+	const url = 'http://cocinafacilconessen.com.ar/api/bazarpremium/'
 	const [producto, setProducto] = useState()
     const [columnaproductos, setColumnaProducto] = useState()
     const [busqueda, setBusqueda] = useState("")
