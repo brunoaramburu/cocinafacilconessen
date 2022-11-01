@@ -119,9 +119,10 @@ const TarjetaReceta = () => {
                     otrasrecetas && otrasrecetas.filter(otrasrecetas => 
                     otrasrecetas.nombre != receta.nombre).slice(0, 4).map ( (otrasrecetas, index)=>{
                         return  <div className='col-sm-3'>
-                        <a href={`/receta/${otrasrecetas.nombre}`} >
-                        <div className="card card-inicio">						
-                            <img src={otrasrecetas.imagen} className={otrasrecetas.nombre} alt="..."></img>						
+                        <div className='card'>	
+                        <span className="border-bottom-0">
+                        <a href={`/receta/${otrasrecetas.nombre}`} >		
+                            <img src={otrasrecetas.imagen} className="img-thumbnail" alt={otrasrecetas.nombre}></img>						
                             <div className="card-body">
                             <div className='d-flex justify-content-center'>
                             <h5 className="card-title" align='center'>{otrasrecetas.nombre}</h5>
@@ -129,8 +130,9 @@ const TarjetaReceta = () => {
                             <div className='d-flex justify-content-center'>    
                             </div>
                             </div>   
-                        </div>
                         </a>
+                        </span>
+                        </div>
                         </div>
                 })
                 }
