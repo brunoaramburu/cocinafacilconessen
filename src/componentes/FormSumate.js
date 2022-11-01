@@ -100,7 +100,7 @@ handleSubmit(event) {
         })
     }
     else{  
-    fetch('http://cocinafacilconessen.com.ar/api/sumate/', {
+    fetch('https://cocinafacilconessen.com.ar/api/sumate/', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

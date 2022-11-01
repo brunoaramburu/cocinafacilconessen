@@ -11,7 +11,7 @@ const TarjetaProducto = () => {
   const [producto, setProducto] = useState([])
   
   const obtenerProducto = async () => {
-    const response = await fetch(`http://cocinafacilconessen.com.ar/api/producto/${nombre}/`)
+    const response = await fetch(`https://cocinafacilconessen.com.ar/api/producto/${nombre}/`)
     const responseJSON = await response.json()
     setProducto(responseJSON)
   }
@@ -22,7 +22,7 @@ const TarjetaProducto = () => {
   const [productosrelacionados, setProductosRelacionados] = useState([])
   
   const obtenerProductosRelacionados = async () => {
-    const response = await fetch('http://cocinafacilconessen.com.ar/api/producto/')
+    const response = await fetch('https://cocinafacilconessen.com.ar/api/producto/')
     const responseJSON = await response.json()
     setProductosRelacionados(responseJSON)
   }

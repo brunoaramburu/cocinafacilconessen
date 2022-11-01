@@ -6,7 +6,7 @@ import FotoBusqueda from '../img/busqueda.png';
 import BannerProductos from '../img/ProductosB.png';
 
 function Complementos() {
-	const url = 'http://cocinafacilconessen.com.ar/api/complementos/'
+	const url = 'https://cocinafacilconessen.com.ar/api/complementos/'
 	const [producto, setProducto] = useState()
     const [columnaproductos, setColumnaProducto] = useState()
     const [busqueda, setBusqueda] = useState("")

@@ -13,7 +13,7 @@ const TarjetaReceta = () => {
   const [receta, setReceta] = useState([])
   
   const obtenerReceta = async () => {
-    const response = await fetch(`http://cocinafacilconessen.com.ar/api/receta/${nombre}/`)
+    const response = await fetch(`https://cocinafacilconessen.com.ar/api/receta/${nombre}/`)
     const responseJSON = await response.json()
     setReceta(responseJSON)
   }
@@ -24,7 +24,7 @@ const TarjetaReceta = () => {
   const [otrasrecetas, setOtrasRecetas] = useState([])
   
   const obtenerOtrasRecetas = async () => {
-    const response = await fetch('http://cocinafacilconessen.com.ar/api/receta/')
+    const response = await fetch('https://cocinafacilconessen.com.ar/api/receta/')
     const responseJSON = await response.json()
     setOtrasRecetas(responseJSON)
   }
@@ -35,7 +35,7 @@ const TarjetaReceta = () => {
   const [productos, setProductos] = useState([])
   
   const obtenerProductos = async () => {
-    const response = await fetch('http://cocinafacilconessen.com.ar/api/producto/')
+    const response = await fetch('https://cocinafacilconessen.com.ar/api/producto/')
     const responseJSON = await response.json()
     setProductos(responseJSON)
   }

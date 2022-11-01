@@ -14,7 +14,7 @@ function RecetasProducto() {
     const [producto, setProducto] = useState([])
     
     const obtenerProducto = async () => {
-        const response = await fetch(`http://cocinafacilconessen.com.ar/api/producto/${nombre}/`)
+        const response = await fetch(`https://cocinafacilconessen.com.ar/api/producto/${nombre}/`)
         const responseJSON = await response.json()
         setProducto(responseJSON)
     }
@@ -23,7 +23,7 @@ function RecetasProducto() {
         obtenerProducto()
     }, [])
     
-    const urlreceta = 'http://cocinafacilconessen.com.ar/api/receta/'
+    const urlreceta = 'https://cocinafacilconessen.com.ar/api/receta/'
 	const [receta, setReceta] = useState()
     const [columnarecetas, setColumnaRecetas] = useState()
     const [busqueda, setBusqueda] = useState("")
@@ -54,7 +54,7 @@ function RecetasProducto() {
 		fetchRecetas()
 	}, [])
 
-    const urlproductos = 'http://cocinafacilconessen.com.ar/api/productospararecetas/'
+    const urlproductos = 'https://cocinafacilconessen.com.ar/api/productospararecetas/'
     const [productos, setProductos] = useState()
     
 	const fetchProductos = async () => {
