@@ -45,7 +45,14 @@ function Inicio () {
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     { !carousel ? 'Cargando...' :
-                    carousel.map( (carousel, index)=>{
+                    carousel[0].map( (carousel, index)=>{
+                        return(<div className="carousel-item active">
+                        <img src={carousel.imagen} className="d-block w-100" alt="Promo Essen"></img>
+                        </div>
+                        )})
+                    }
+                    { !carousel ? 'Cargando...' :
+                    carousel.splice(1).map( (carousel, index)=>{
                         return(<div className="carousel-item">
                         <img src={carousel.imagen} className="d-block w-100" alt="Promo Essen"></img>
                         </div>
