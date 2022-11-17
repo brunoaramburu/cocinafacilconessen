@@ -13,6 +13,8 @@ export const FormSumate = () => {
       }, (error) => {
           console.log(error.text);
       });
+      window.alert("El formulario se envio correctamente!");
+      window.location.replace('/');
   };
 
   return (

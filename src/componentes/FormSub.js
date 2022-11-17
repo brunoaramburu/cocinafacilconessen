@@ -13,6 +13,8 @@ export const FormSub = () => {
       }, (error) => {
           console.log(error.text);
       });
+      window.alert("Te suscribiste correctamente!");
+      window.location.replace('/');
   };
 
   return (
