@@ -46,7 +46,7 @@ function Inicio () {
                 <div className="carousel-inner">
                     { !carousel ? 'Cargando...' :
                     carousel.map( (carousel, index)=>{
-                        return(<div className="carousel-item active">
+                        return(<div className="carousel-item">
                         <img src={carousel.imagen} className="d-block w-100" alt="Promo Essen"></img>
                         </div>
                         )})

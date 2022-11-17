@@ -5,6 +5,4 @@ from api.models import *
 admin.site.register(Producto)
 admin.site.register(Receta)
 admin.site.register(ProductoParaReceta)
-admin.site.register(Suscripciones)
-admin.site.register(Sumate)
 admin.site.register(Carousel)
