@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/recetas.css';
 import Comensales from '../img/comensales.png';
 import Duracion from '../img/duracion.png';
-import BannerRecetas from '../img/Recetas.png';
+import BannerRecetas from '../img/Recetas.jpg';
 import FotoBusqueda from '../img/busqueda.png';
 
 function Recetas() {

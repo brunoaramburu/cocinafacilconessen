@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/productos.css';
 import FotoBusqueda from '../img/busqueda.png';
-import BannerProductos from '../img/ProductosB.png';
+import BannerProductos from '../img/ProductosB.jpg';
 
 function Complementos() {
 	const url = 'https://cocinafacilconessen.com.ar/api/complementos/'
@@ -66,7 +66,7 @@ function Complementos() {
                         <div className='columnaproductosmobile'>
                             <div className="dropdown">
                             <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                Categorias
+                                Complementos
                             </button>
                             <ul className="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                 <li><a className="dropdown-item" href="/productos/productos">Productos</a></li>

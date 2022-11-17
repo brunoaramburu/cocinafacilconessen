@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from api.models import Producto, ProductoParaReceta, Receta, Sumate, Suscripciones
-from api.serializers import ProductoParaRecetaSerializer, ProductoSerializer, RecetaSerializer, SumateSerializer, SuscripcionesSerializer
+from api.models import Producto, ProductoParaReceta, Receta, Sumate, Suscripciones, Carousel
+from api.serializers import ProductoParaRecetaSerializer, ProductoSerializer, RecetaSerializer, SumateSerializer, SuscripcionesSerializer, CarouselSerializer
 
 # Create your views here.
 
@@ -43,6 +43,10 @@ class ComplementosViewSet(viewsets.ModelViewSet):
 class ProductoParaRecetaViewSet(viewsets.ModelViewSet):
     serializer_class = ProductoParaRecetaSerializer
     queryset = ProductoParaReceta.objects.all().order_by('producto')
+
+class CarouselViewSet(viewsets.ModelViewSet):
+    serializer_class = CarouselSerializer
+    queryset = Carousel.objects.all()
 
 
          

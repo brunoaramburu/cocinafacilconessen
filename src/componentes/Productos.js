@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/productos.css';
-import BannerProductos from '../img/ProductosB.png';
+import BannerProductos from '../img/ProductosB.jpg';
 import FotoBusqueda from '../img/busqueda.png';
 
 function Productos() {

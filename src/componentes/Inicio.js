@@ -3,17 +3,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/inicio.css';
 import './css/video.css';
 import './css/form.css';
-import BazarPremium from '../img/BazarPremium.png';
-import Combos from '../img/Combos.png';
-import Complementos from '../img/Complementos.png';
-import Productos from '../img/Productos.png';
+import BazarPremium from '../img/BazarPremium.jpg';
+import Combos from '../img/Combos.jpg';
+import Complementos from '../img/Complementos.jpg';
+import Productos from '../img/Productos.jpg';
 import Envios from '../img/envios.png';
 import FormasDePago from '../img/formasdepago.png';
 import GarantiaOficial from '../img/garantiaoficial.png';
-import Carrousel1 from'../img/1.png';
-import Carrousel2 from'../img/2.png';
-import Carrousel3 from'../img/3.png';
-import Carrousel4 from'../img/4.png';
+import Carrousel1 from'../img/1.jpg';
+import Carrousel2 from'../img/2.jpg';
+import Carrousel3 from'../img/3.jpg';
+import Carrousel4 from'../img/4.jpg';
 import { useState, useEffect } from 'react';
 import FormSub from './FormSub';
 
@@ -29,23 +29,28 @@ function Inicio () {
 		fetchApi()
 	}, [])
 
+    const urlCarousel = 'https://cocinafacilconessen.com.ar/api/carousel/'
+	const [carousel, setCarousel] = useState()
+	const fetchCarousel = async () => {
+		const response = await fetch(urlCarousel)
+		const responseJSON = await response.json()
+		setCarousel(responseJSON)
+	}
+	useEffect(() => {
+		fetchCarousel()
+	}, [])
+
     return (
         <div>      
-            {/* <!-- CAROUSEL DE BOOTSTRAP --> */}            
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                    <img src={Carrousel1} className="d-block w-100" alt="Promo Essen"></img>
-                    </div>
-                    <div className="carousel-item">
-                    <img src={Carrousel2} className="d-block w-100" alt="Promo Essen"></img>
-                    </div>
-                    <div className="carousel-item">
-                    <img src={Carrousel3} className="d-block w-100" alt="Promo Essen"></img>
-                    </div>
-                    <div className="carousel-item">
-                    <img src={Carrousel4} className="d-block w-100" alt="Promo Essen"></img>
-                    </div>
+                    { !carousel ? 'Cargando...' :
+                    carousel.map( (carousel, index)=>{
+                        return(<div className="carousel-item active">
+                        <img src={carousel.imagen} className="d-block w-100" alt="Promo Essen"></img>
+                        </div>
+                        )})
+                    }
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

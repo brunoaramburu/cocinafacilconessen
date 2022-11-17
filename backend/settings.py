@@ -57,10 +57,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://cocinafacilconessenbuild.herokuapp.com',
-    'https://cocinafacilconessenbuild.herokuapp.com',
-]
+CORS_ALLOW_ALL_ORIGINS=True
 
 ROOT_URLCONF = 'backend.urls'
 

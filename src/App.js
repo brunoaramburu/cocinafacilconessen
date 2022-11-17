@@ -20,7 +20,6 @@ import Complementos from './componentes/Complementos';
 import RecetasProducto from './componentes/RecetasProducto';
 import TarjetaReceta from './componentes/TarjetaReceta';
 import BotonWsp from './componentes/BotonWsp';
-import FormSub from './componentes/FormSub';
 import Sumate from './componentes/Sumate';
 
 function App() {

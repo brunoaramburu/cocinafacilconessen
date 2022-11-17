@@ -40,7 +40,23 @@ class Suscripciones(models.Model):
     nombre = models.CharField(max_length=50, primary_key=True)
     numerodetelefono = models.CharField(max_length=30)
 
+    class Meta:
+        verbose_name = 'Formulario de suscripcion'
+        verbose_name_plural = 'Formularios de suscripcion '
+
 class Sumate(models.Model):
     nombre = models.CharField(max_length=50, primary_key=True)
     apellido = models.CharField(max_length=50)
     numerodetelefono = models.CharField(max_length=30)
+
+    class Meta:
+        verbose_name = 'Formulario "Sumate a nuestro equipo"'
+        verbose_name_plural = 'Formularios "Sumate a nuestro equipo"'
+
+class Carousel(models.Model):
+    imagen = models.ImageField(upload_to="Carousel", blank=True)
+
+    class Meta:
+        verbose_name = 'Carousel'
+        verbose_name_plural = 'Carousel'
+    

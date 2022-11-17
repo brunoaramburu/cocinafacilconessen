@@ -1,103 +1,36 @@
-import React, { Component } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-export default class FormSub extends Component {
+export const FormSub = () => {
+  const form = useRef();
 
-constructor(props) {
-    super(props);
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    this.state = {
-        nombre : '',
-        numerodetelefono: '',
-        errornombrenull : '',
-        errornumeronull : '',
-    };
+    emailjs.sendForm('service_9c88ggg', 'template_zx1yj7t', form.current, 'I7fbPNb8noiNC5Yx3')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
-    this.handleChangeNombre= this.handleChangeNombre.bind(this);
-    this.handleChangeNumerodetelefono= this.handleChangeNumerodetelefono.bind(this);
+  return (
+    <form ref={form} onSubmit={sendEmail} className='row'>
+      <div className="col-auto suscribirse inputsumate">
+        <label className="visually-hidden">Nombre</label>
+        <input className="form-control" type="text" name="nombre" required="required" placeholder='Nombre'/>
+      </div>
+      <div className="col-auto suscribirse inputsumate">
+        <label className="visually-hidden">Numero de teléfono</label>
+        <input className="form-control" type="tel" name="numerodetelefono" minlength="6" required="required" placeholder="Numero de teléfono"/>
+      </div>
+      <div className="col-auto suscribirse inputsumate">
+        <input className="btn btn-primary mb-3" type="submit" value="Suscribirme" />
+      </div>
+    </form>
+  );
 
-    this.handleSubmit = this.handleSubmit.bind(this);
+};
 
-}
-
-handleChangeNombre(event) {
-    this.setState({
-        nombre: event.target.value,
-    })
-}
-
-handleChangeNumerodetelefono(event) {
-    this.setState({
-        numerodetelefono: event.target.value,
-    })
-}
-
-handleSubmit(event) {
-    if((this.state.numerodetelefono.length < 6 || this.state.numerodetelefono.length > 20) && (this.state.nombre.length < 2 || this.state.nombre.length > 30) ){   
-        event.preventDefault();
-        this.setState({
-            errornumeronull: '*Ingrese un número de télefono valido.',
-            errornombrenull: '*El nombre de tener de 2 a 30 caracteres alfabeticos.',
-        })
-    }
-    else if(this.state.nombre.length < 2 || this.state.nombre.length > 30){   
-        event.preventDefault();
-        this.setState({
-            errornombrenull: '*El nombre de tener de 2 a 30 caracteres alfabeticos.',
-            errornumeronull: '',
-        })
-    }
-    else if(this.state.numerodetelefono.length < 6 || this.state.numerodetelefono.length > 20){   
-        event.preventDefault();
-        this.setState({
-            errornumeronull: '*Ingrese un número de télefono valido.',
-            errornombrenull:'',
-        })
-    }
-    else{  
-    fetch('https://cocinafacilconessen.com.ar/api/suscripciones/', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        xsrfHeaderName: "X-CSRFToken",
-        body: JSON.stringify({
-            nombre : this.state.nombre,
-            numerodetelefono : this.state.numerodetelefono,
-        })
-    });
-
-    event.preventDefault();
-    window.alert("Te suscribiste correctamente, próximamente recibiras ofertas y novedades!");
-    window.location.replace('/');
-    }
-}
-
-
-render() {
-
-    return (
-        <div>
-            <form className="row g-3">
-                <div className="col-auto suscribirse">
-                    <label className="visually-hidden">Nombre</label>
-                    <input className="form-control" id="nombre" name="nombre" placeholder="Nombre" onChange={this.handleChangeNombre}></input>
-                </div>
-                <div className="col-auto suscribirse">
-                    <label className="visually-hidden">Número de telefono</label>
-                    <input className="form-control" id="numerodetelefono" name="numerodetelefono" placeholder="Numero de teléfono" onChange={this.handleChangeNumerodetelefono}></input>
-                </div>
-                <div className="col-auto botonsuscribirse">
-                    <button onClick={this.handleSubmit} className="btn btn-primary mb-3">Suscribirme</button>
-                </div>
-            </form>
-            <div>
-            <p className="mensajeerror">{this.state.errornombrenull}</p>
-            </div>
-            <div>
-            <p className="mensajeerror">{this.state.errornumeronull}</p>
-            </div>
-        </div>
-    );
-}
-}
+export default FormSub

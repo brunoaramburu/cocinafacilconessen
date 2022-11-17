@@ -8,7 +8,7 @@ import PerfilGoogle3 from'../img/PerfilGoogle3.png';
 import PerfilGoogle4 from'../img/PerfilGoogle4.png';
 import PerfilGoogle5 from'../img/PerfilGoogle5.png';
 import OpinionComillas from'../img/opinioncomillas.png';
-import BannerSobreNosotros from '../img/SobreNosotros.png';
+import BannerSobreNosotros from '../img/SobreNosotros.jpg';
 
 function SobreNosotros(){
 

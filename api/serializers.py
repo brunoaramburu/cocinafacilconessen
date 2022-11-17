@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from api.models import Producto, ProductoParaReceta, Receta, Sumate, Suscripciones
+from api.models import Producto, ProductoParaReceta, Receta, Sumate, Suscripciones, Carousel
 
 class ProductoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -26,5 +26,11 @@ class SumateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sumate
         fields = "__all__"
+
+class CarouselSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Carousel
+        fields = "__all__"
+
 
 

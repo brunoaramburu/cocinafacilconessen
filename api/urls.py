@@ -1,7 +1,7 @@
 from django.urls import path, include
 from rest_framework import routers
 
-from api.views import BazarPremiumViewSet, CombosViewSet, ProductosViewSet, CombosViewSet, ProductoParaRecetaViewSet, ProductoViewSet, RecetaViewSet, RecetasRecientesViewSet, SumateViewSet, SuscripcionesViewSet
+from api.views import BazarPremiumViewSet, CombosViewSet, ProductosViewSet, CombosViewSet, ProductoParaRecetaViewSet, ProductoViewSet, RecetaViewSet, RecetasRecientesViewSet, SumateViewSet, SuscripcionesViewSet, CarouselViewSet
 
 router = routers.DefaultRouter()
 router.register(r'producto', ProductoViewSet)
@@ -13,6 +13,7 @@ router.register(r'bazarpremium', BazarPremiumViewSet)
 router.register(r'productospararecetas', ProductoParaRecetaViewSet)
 router.register(r'suscripciones', SuscripcionesViewSet)
 router.register(r'sumate', SumateViewSet)
+router.register(r'carousel', CarouselViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

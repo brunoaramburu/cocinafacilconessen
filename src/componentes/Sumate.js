@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/sumate.css';
-import BannerSumate from '../img/Sumate.png';
+import BannerSumate from '../img/Sumate.jpg';
 import FormSumate from './FormSumate';
 import logowsp from '../img/logowsp.png'
 
