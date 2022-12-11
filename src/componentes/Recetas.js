@@ -15,7 +15,7 @@ function Recetas() {
 	const fetchRecetas = async () => {
 		const response = await fetch(urlreceta)
 		const responseJSON = await response.json()
-		setReceta(responseJSON)
+		setReceta(responseJSON.reverse())
         setColumnaRecetas(responseJSON)
 	}
     
