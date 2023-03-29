@@ -14,7 +14,7 @@ import Footer from './componentes/Footer';
 import TarjetaProducto from './componentes/TarjetaProducto';
 import Recetas from './componentes/Recetas';
 import ProductosCat from './componentes/ProductosCat';
-import Combos from './componentes/Combos';
+import Promos from './componentes/Promos';
 import BazarPremium from './componentes/BazarPremium';
 import Complementos from './componentes/Complementos';
 import RecetasProducto from './componentes/RecetasProducto';
@@ -36,7 +36,7 @@ function App() {
                         <Route exact={true} path="/sobrenosotros" element={<SobreNosotros/>}/>
                         <Route exact={true} path="/productos" element={<Productos/>}/>
                         <Route exact={true} path="/productos/productos" element={<ProductosCat/>}/>                       
-                        <Route exact={true} path="/productos/combos" element={<Combos/>}/>                         
+                        <Route exact={true} path="/productos/promos" element={<Promos/>}/>                         
                         <Route exact={true} path="/productos/bazarpremium" element={<BazarPremium/>}/>                     
                         <Route exact={true} path="/productos/complementos" element={<Complementos/>}/>                    
                         <Route exact={true} path="/productos/:nombre" element={<TarjetaProducto/>}/>        

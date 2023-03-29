@@ -44,4 +44,18 @@
     font-size: 14px;
 }
 
+.preparacion-ingredientes-pc{
+    display: none;
+}
+
+.col-recetas{
+    margin-top: 0px;
+}
+}
+
+@media screen and (min-width: 501px){
+
+.preparacion-ingredientes-mobile{
+    display: none;
+}
 }

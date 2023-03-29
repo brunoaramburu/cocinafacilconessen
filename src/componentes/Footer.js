@@ -21,7 +21,7 @@ function Footer () {
             </div>
             </div>
             <div>
-                <p className='copyr'>Copyright Cocina Fácil con Essen - 2022. Todos los derechos reservados.</p>
+                <p className='copyr'>Copyright Cocina Fácil con Essen - 2023. Todos los derechos reservados.</p>
                 <p className='copyr'>Web desarrollada por Bruno Aramburú</p>
             </div>
         </div>
@@ -39,7 +39,7 @@ function Footer () {
             </div>
             </div>
             <div>
-                <p className='copyr'>Copyright Cocina Fácil con Essen - 2022. Todos los derechos reservados.</p>
+                <p className='copyr'>Copyright Cocina Fácil con Essen - 2023. Todos los derechos reservados.</p>
                 <p className='copyr'>Web desarrollada por Bruno Aramburú</p>
             </div>
         </div>   

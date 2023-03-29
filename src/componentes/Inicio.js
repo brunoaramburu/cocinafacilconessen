@@ -103,11 +103,11 @@ function Inicio () {
 				<div className="row">				
                     <div className="col-sm-3">			            	 	
                     <span className="border-bottom-0"></span>
-                    <a href='/productos/combos'>
+                    <a href='/productos/promos'>
                     <div className="card card-inicio">						
                     <img src={Combos} className="img-thumbnail" alt="Combos Essen"></img>						
                     <div className="card-body">
-                    <h5 className="card-title" align='center'>Combos</h5>					
+                    <h5 className="card-title" align='center'>Promos</h5>					
                     </div>
                     </div>
                     </a>

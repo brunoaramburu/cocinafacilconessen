@@ -59,7 +59,7 @@ function ProductosCat() {
                         <div className="list-group">
                             <a href="/productos/productos" className="list-group-item list-group-item-dark">Productos</a>
                             <a href="/productos/bazarpremium" className="list-group-item list-group-item-action">Bazar Premium</a>
-                            <a href="/productos/combos" className="list-group-item list-group-item-action">Combos</a>
+                            <a href="/productos/promos" className="list-group-item list-group-item-action">Promos</a>
                             <a href="/productos/complementos" className="list-group-item list-group-item-action">Complementos</a>
                         </div>
                         </div>        
@@ -71,7 +71,7 @@ function ProductosCat() {
                             <ul className="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                 <li><a className="dropdown-item" href="/productos/productos">Productos</a></li>
                                 <li><a className="dropdown-item" href="/productos/bazarpremium">Bazar Premium</a></li>
-                                <li><a className="dropdown-item" href="/productos/combos">Combos</a></li>
+                                <li><a className="dropdown-item" href="/productos/promos">Promos</a></li>
                                 <li><a className="dropdown-item" href="/productos/complementos">Complementos</a></li>
                             </ul>
                             </div>

@@ -95,7 +95,7 @@ const TarjetaReceta = () => {
                     </div>
                 </div>
             </div>
-            <div className='row'>
+            <div className='row preparacion-ingredientes-pc'>
                 <div className='col-7 col-recetas'>
                     <div>
                         <h4>Preparación</h4>
@@ -106,6 +106,20 @@ const TarjetaReceta = () => {
                     <div>
                         <h4>Ingredientes</h4>
                         <div className='textop' dangerouslySetInnerHTML={{ __html: receta.ingredientes}}/>
+                    </div>
+                </div>
+            </div>
+            <div className='row preparacion-ingredientes-mobile'>
+                <div className='col-3 col-recetas'>
+                    <div>
+                        <h4>Ingredientes</h4>
+                        <div className='textop' dangerouslySetInnerHTML={{ __html: receta.ingredientes}}/>
+                    </div>
+                </div>
+                <div className='col-7 col-recetas'>
+                    <div>
+                        <h4>Preparación</h4>
+                        <div className='textop' dangerouslySetInnerHTML={{ __html: receta.preparacion}}/>
                     </div>
                 </div>
             </div>
