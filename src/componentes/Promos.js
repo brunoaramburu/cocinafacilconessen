@@ -66,7 +66,7 @@ function Promos() {
                         <div className='columnaproductosmobile'>
                             <div className="dropdown">
                             <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                Combos
+                                Promos
                             </button>
                             <ul className="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                 <li><a className="dropdown-item" href="/productos/productos">Productos</a></li>
