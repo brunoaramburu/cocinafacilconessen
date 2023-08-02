@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cf92f643c4e087fb8922",
+    "revision": "986e6d76571704974d6e",
     "url": "/static/css/main.1dd61066.chunk.css"
   },
   {
-    "revision": "cf92f643c4e087fb8922",
-    "url": "/static/js/main.cf92f643.chunk.js"
+    "revision": "986e6d76571704974d6e",
+    "url": "/static/js/main.986e6d76.chunk.js"
   },
   {
     "revision": "4e9aafb99959cf9fe670",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/static/media/tiktok.33512275.jpg"
   },
   {
-    "revision": "46f4cc19b6d5c6c278fbd2d4faf8e1ce",
-    "url": "/static/media/Logo.46f4cc19.png"
+    "revision": "eee9eb99801c6987f060aa93d5af3e02",
+    "url": "/static/media/Logo.eee9eb99.png"
   },
   {
     "revision": "7c73e15e32effa6b168eaf0bbbe7504d",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/4.6426d76d.jpg"
   },
   {
-    "revision": "3e46853322cefde5d2ebca8f858e401a",
+    "revision": "67999f24085c9dee1c0b7694a8055bc5",
     "url": "/index.html"
   }
 ];
