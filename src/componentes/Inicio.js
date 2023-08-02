@@ -90,7 +90,7 @@ function Inicio () {
                     <div className="card text-center tarjetaitems" >
                     <div className="card-body">
                         <img className='imgitems' src={FormasDePago} alt="Formas de pago Essen" width="50" height="50"></img>
-                        <p className="card-text">Ahora 12 sin interes</p>
+                        <p className="card-text">Ahora 12</p>
                     </div>
                     </div>
                 </div>
